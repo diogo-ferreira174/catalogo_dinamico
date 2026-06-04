@@ -3,20 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Mundo: Jogos, Filmes e Séries</title>
+    <title>PixelPlay Hub: Filmes, Séries e Jogos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo site.png">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>🏆 Top Entretenimento Global 🏆</h1>
-        <p>Os melhores jogos, filmes e séries do mundo em um só lugar.</p>
+        <div class="header-inner">
+            <a href="index.html" class="brand-link">
+                <img class="logo-image" src="logo site.png" alt="Logo PixelPlay Hub">
+                <div class="brand-text">
+                    <strong>PixelPlay Hub</strong>
+                    <small>Seu catálogo de entretenimento</small>
+                </div>
+            </a>
+            <nav class="site-menu">
+                <a href="index.html" class="menu-link">Home</a>
+                <a href="index.html?categoria=Filme" class="menu-link">Filmes</a>
+                <a href="index.html?categoria=Série" class="menu-link">Séries</a>
+                <a href="index.html?categoria=Jogo" class="menu-link">Jogos</a>
+            </nav>
+        </div>
+        <div class="header-copy">
+            <h1>Encontre sua próxima aventura audiovisual.</h1>
+            <p>Explore um catálogo novo e dinâmico com filmes, séries e jogos em destaque — tudo com estilo e filtragem instantânea.</p>
+        </div>
     </header>
 
-    <main id="lista-itens" class="container">
+    <main class="container">
+        <section class="topo">
+            <div class="intro">
+                <p class="eyebrow">Descubra novos favoritos</p>
+                <h2>Catálogo interativo com filmes, séries e jogos atualizados.</h2>
+                <p>Explore recomendações selecionadas, filtre por categoria e encontre seu próximo maratona, gameplay ou clássico imperdível.</p>
+            </div>
+
+            <div class="hero-cards">
+                <article class="stats-card">
+                    <span>+15 itens</span>
+                    <p>Curadoria épica de títulos de todo o entretenimento.</p>
+                </article>
+                <article class="stats-card">
+                    <span>3 categorias</span>
+                    <p>Filmes, séries e jogos para todos os gostos.</p>
+                </article>
+                <article class="stats-card">
+                    <span>Atualizado</span>
+                    <p>Novos destaques e favoritos sempre disponíveis.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="controls">
+            <div class="search-box">
+                <input id="busca" type="search" placeholder="Buscar por título, categoria ou ano" autocomplete="off">
+            </div>
+            <div class="filtros" id="filtros-categorias"></div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <h2>Explorar tudo</h2>
+                <p>Escolha entre filmes, séries e jogos ou use a busca para encontrar o que mais combina com você.</p>
+            </div>
+            <div id="lista-itens" class="grid"></div>
+        </section>
     </main>
 </body>
 </html>
