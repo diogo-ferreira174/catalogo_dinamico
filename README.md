@@ -34,9 +34,11 @@ Um catálogo de produtos desenvolvido com **HTML, CSS e JavaScript**, permitindo
 catalogo_dinamico/
 │
 ├── index.html
+├── detalhes.html
 ├── style.css
 ├── script.js
 └── README.md
+
 ```
 
 ---
